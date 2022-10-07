@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    padding-top: 150px;
+}
+p {
+    text-align: center;
+    padding: 10px;
+}
+.nextBox {
+    text-align: center;
+}
+.choices {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+#yesButton {
+    cursor: pointer;
+    margin-right: 10px;
+}
+#noButton {
+    cursor: pointer;
+    margin-left: 10px;
+}
