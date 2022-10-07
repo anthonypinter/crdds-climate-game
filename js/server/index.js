@@ -11,7 +11,6 @@ const dataFile = path.join(__dirname, 'data.json');
 
 //  Enable CORS
 
- 
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
 

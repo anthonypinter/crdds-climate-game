@@ -121,6 +121,3 @@ noButton.addEventListener('click', answer => {
     const p = new Poll(document.querySelector('.answerBox'));
 });
 
-
-
-
