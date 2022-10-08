@@ -16,7 +16,7 @@ class Poll {
     constructor(root) {
         this.root = root;
         this.selected = sessionStorage.getItem('answer');
-        this.endpoint = 'http://localhost:3000/poll';
+        this.endpoint = 'http://localhost:3000/';
         this._refresh();
     }
 
