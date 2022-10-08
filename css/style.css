@@ -101,6 +101,15 @@ button > a {
   margin-top: 1em;
 }
 
+#result {
+  display:none;
+}
+
+#percent {
+  overflow: auto;
+  height: fit-content;
+}
+
 /* ----------------------------------------------------------------- */
 /* button styling */
 /* ----------------------------------------------------------------- */
