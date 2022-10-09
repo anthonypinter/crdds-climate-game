@@ -1,0 +1,19 @@
+{
+  "name": "crdds-climate-game",
+  "version": "1.0.0",
+  "description": "A webapp for CRDDS Open Access Week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonypinter/crdds-climate-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonypinter/crdds-climate-game/issues"
+  },
+  "homepage": "https://github.com/anthonypinter/crdds-climate-game#readme"
+}
