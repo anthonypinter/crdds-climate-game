@@ -12,6 +12,11 @@ let choice2 = false;
 
 this.endpoint = 'http://localhost:3000/';
 
+function displayCredits() {
+  credits = document.getElementById("credits").style.display = "block";
+}
+
+
 
 if (document.URL.includes("q1.html") ) {
   page = "q1"

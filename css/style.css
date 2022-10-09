@@ -44,6 +44,7 @@ button > a {
 	flex-grow: 0;
 	flex-shrink: 0;
   justify-content:center;
+  cursor: pointer;
 }
 
 .flexbox-container {
@@ -72,7 +73,6 @@ button > a {
 .opt-img {
   height: 150px;
   width: 85px;
-  margin: 50px 0px;
 }
 
 .percent-block {
@@ -116,16 +116,22 @@ button > a {
 
 button {
   text-align: center;
-    font-size: 30px;
-    background-color: rgba(255,255,255,.75);
-    padding: .25em;   
-    border: groove black;
-    cursor: pointer;
-    border-radius: 10px;
+  font-size: 30px;
+  background-color: rgba(207,184,124,.5);
+  padding: .25em;   
+  border: 2px solid #999;
+  border-color: #999;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px #999;
 }
 
 .play{
   width: 120%;
+}
+
+.play:hover {
+  background-color: rgba(207,184,124,.3);
 }
 
 .next {
@@ -136,12 +142,29 @@ button {
   margin-bottom: 1em;
 }
 
+.next > button {
+  background-color: rgba(255,255,255,.5);
+}
+
+.next > button:hover {
+  background-color: rgba(255,255,255,.75);
+}
+
 /* ----------------------------------------------------------------- */
 /* conclusion styling */
 /* ----------------------------------------------------------------- */
 
 .conc{
   font-size: 40px;
+}
+
+.conc-link {
+  
+  color: rgba(207,184,124,1)
+}
+
+.conc-link:hover {
+  color: rgba(207,184,124,.5)
 }
 
 /* ----------------------------------------------------------------- */
@@ -236,3 +259,13 @@ footer > div {
 }
 
 /* ----------------------------------------------------------------- */
+
+#credits {
+  display: none;
+  text-align: center;
+  background-color: rgba(207,184,124,.5);
+  border-radius: 25px;
+  padding:.5em;
+  margin-top: 1em;
+}
+
