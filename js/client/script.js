@@ -10,7 +10,7 @@ let page = "";
 let choice1 = false;
 let choice2 = false;
 
-this.endpoint = 'http://localhost:3000/';
+this.endpoint = 'http://localhost:8000/';
 
 function displayCredits() {
   credits = document.getElementById("credits").style.display = "block";
