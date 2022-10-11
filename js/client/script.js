@@ -1,4 +1,4 @@
-console.log("testing")l
+console.log("testing");
 var clicked = false;
 const open_url = "./img/open.png";
 const close_url = "./img/close.png";
