@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/client/script.js"></script>
+    <script src="./js/client/script.js"></script>
     <title>Climate Justice</title>
   </head>
 
@@ -25,31 +25,21 @@
         </h3>
       </div>
       <div class="question-container">
-        <div
-          class="question"
-          id="option1"
-          onclick="changeImage1()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-1"
-            src="/img/close.png"
-          />
+        <div class="question" id="option1" onclick="changeImage1()">
+          <div class="card">
+            <img class="flexbox-item flexbox-item-1 opt-img" id="img-1" src="./img/close.png" />  
+            <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+          </div> 
           <!--  -->
           <div class="options">
             <p>Publish your latest article in a prominent open access journal, which will bring the research international attention, and it will also be available to anyone who wants to access it</p>
           </div>
         </div>
-        <div
-          class="question"
-          id="option2"
-          onclick="changeImage2()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-2"
-            src="/img/close.png"
-          />
+        <div class="question" id="option2" onclick="changeImage2()">
+        <div class="card">
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-2" src="./img/close.png" />  
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+        </div>
           <!--  -->
           <div class="options">
             <p>Make your entire data set open so that other researchers can find, reuse, and build upon your data, potentially leading to broader and more impactful implementation of your findings</p>
@@ -62,7 +52,7 @@
         <div class="flexbox-container percent-block" id="result" style="display:none;">
           <h2 id="percent" class="flexbox-item"><span id="agree"></span>% of researchers made the same decision. <span id="disagree"></span>% did not.</h2>
           <div class="next">
-            <button onclick="pushData()" type="button"><a href="/q7.html">Next question</a></button>
+            <button onclick="pushData()" type="button"><a href="q7.html">Next question</a></button>
           </div>
         </div>
         </div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/client/script.js"></script>
+    <script src="./js/client/script.js"></script>
     <title>Climate Justice</title>
   </head>
 
@@ -24,32 +24,22 @@
         </h3>
       </div>
       <div class="question-container">
-        <div
-          class="question"
-          id="option1"
-          onclick="changeImage1()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-1"
-            src="/img/close.png"
-          />
+        <div class="question" id="option1" onclick="changeImage1()">
+        <div class="card">
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-1" src="./img/close.png" />  
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+        </div> 
           <!--  -->
           <div class="options">
             <p>Publish in a high-impact, closed-access journal widely read across many academic disciplines, increasing the likelihood that you will receive research grants, and then make the research openly available in an institutional repository after a 12-month embargo period</p>
           </div>
         </div>
-        <div
-          class="question"
-          id="option2"
-          onclick="changeImage2()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-2"
-            src="/img/close.png"
-          />
-          <!--  -->
+        <div class="question" id="option2" onclick="changeImage2()">
+        <div class="card">
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-2" src="./img/close.png" />  
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+         </div>
+      
           <div class="options">
             <p>Use institutional funding to publish in an open access journal with a narrower focus that will be immediately available to local practitioners and other non-academics who can use this information for the upcoming dry season</p>
           </div>
@@ -62,7 +52,7 @@
         <div class="flexbox-container percent-block" id="result" style="display:none;">
           <h2 id="percent" class="flexbox-item"><span id="agree"></span>% of researchers made the same decision. <span id="disagree"></span>% did not.</h2>
           <div class="next">
-            <button onclick="pushData()" type="button"><a href="/q4.html">Next question</a></button>
+            <button onclick="pushData()" type="button"><a href="q4.html">Next question</a></button>
           </div>
         </div>
         </div>

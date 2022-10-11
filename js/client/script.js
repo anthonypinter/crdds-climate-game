@@ -1,6 +1,6 @@
 var clicked = false;
-const open_url = "/img/open.png";
-const close_url = "/img/close.png";
+const open_url = "./img/open.png";
+const close_url = "./img/close.png";
 
 let agreeCalculation = 0.00;
 let disagreeCalculation = 0.00;
@@ -10,13 +10,24 @@ let page = "";
 let choice1 = false;
 let choice2 = false;
 
-this.endpoint = 'http://localhost:3000/';
+this.endpoint = 'https://crdds-climate-game.herokuapp.com/';
 
+var data;
+
+async function _dataLoad() {
+  const response = await fetch(this.endpoint);
+  const x = await response.json()
+  .then(x => { return x } );
+  console.log(x);
+};
+
+data = _dataLoad();
+
+/*
 function displayCredits() {
   credits = document.getElementById("credits").style.display = "block";
 }
-
-
+*/
 
 if (document.URL.includes("q1.html") ) {
   page = "q1"
@@ -39,8 +50,6 @@ else if (document.URL.includes("q6.html") ) {
 else if (document.URL.includes("q7.html") ) {
   page = "q7"
 }
-
-
 
 async function changeImage1() {
   var img_obj = document.getElementById("img-1");

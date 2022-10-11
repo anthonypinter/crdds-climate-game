@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/client/script.js"></script>
+    <script src="./js/client/script.js"></script>
     <title>Climate Justice</title>
   </head>
 
@@ -24,34 +24,24 @@
         </h3>
       </div>
       <div class="question-container">
-        <div
-          class="question"
-          id="option1"
-          onclick="changeImage1()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-1"
-            src="/img/close.png"
-          />
+        <div class="question" id="option1" onclick="changeImage1()" >
+        <div class="card">
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-1" src="./img/close.png" />  
+          <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+        </div>
           <!--  -->
           <div class="options">
-            <p>Post your pre-publication manuscript in an NSF-approved repository which will be open access by 2026</p>
+            <p>Publish in a closed-access journal but post the final published version of your article in an NSF approved repository so that version is immediately available to the public</p>
           </div>
         </div>
-        <div
-          class="question"
-          id="option2"
-          onclick="changeImage2()"
-        >
-          <img
-            class="flexbox-item flexbox-item-1 opt-img"
-            id="img-2"
-            src="/img/close.png"
-          />
+        <div class="question" id="option2" onclick="changeImage2()">
+          <div class="card">
+            <img class="flexbox-item flexbox-item-1 opt-img" id="img-2" src="./img/close.png" />  
+            <img class="flexbox-item flexbox-item-1 opt-img" id="img-top" src="./img/open.png" />
+          </div>
           <!--  -->
           <div class="options">
-            <p>Spend valuable time looking for a fully open access journal so the final, published version of your article is immediately available to the public</p>
+            <p>Write into your grant a request for funds to publish in your open access journal of choice that requires an article processing charge</p>
           </div>
         </div>
       </div>
@@ -61,7 +51,7 @@
         <div class="flexbox-container percent-block" id="result" style="display:none;">
           <h2 id="percent" class="flexbox-item"><span id="agree"></span>% of researchers made the same decision. <span id="disagree"></span>% did not.</h2>
           <div class="next">
-            <button onclick="pushData()" type="button"><a href="/conclusion.html">Next question</a></button>
+            <button onclick="pushData()" type="button"><a href="conclusion.html">Next question</a></button>
           </div>
         </div>
         </div>

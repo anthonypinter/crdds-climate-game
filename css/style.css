@@ -27,7 +27,7 @@ button > a {
 .question-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   margin: 0% 1%;
   flex-basis: 40%;
 	flex-grow: 0;
@@ -45,6 +45,8 @@ button > a {
 	flex-shrink: 0;
   justify-content:center;
   cursor: pointer;
+  position: relative;
+
 }
 
 .flexbox-container {
@@ -108,6 +110,24 @@ button > a {
 #percent {
   overflow: auto;
   height: fit-content;
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+        display: inline-block;
+}
+
+.card #img-top {
+  display:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card:hover #img-top {
+  display:inline;
 }
 
 /* ----------------------------------------------------------------- */
@@ -212,56 +232,55 @@ footer > div {
 /* ----------------------------------------------------------------- */
 
 .background {
-  background: url("/img/lock-light.png") repeat;
+  background: url("../img/lock-light.png") repeat;
   background-size: 110px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .background-q1 {
-  background: url("/img/water-pollutants-light.png") repeat;
+  background: url("../img/water-pollutants-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q2 {
-  background: url("/img/air-purification-light.png") repeat;
+  background: url("../img/air-purification-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q3 {
-  background: url("/img/wildfire-mitigation-light.png") repeat;
+  background: url("../img/wildfire-mitigation-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q4 {
-  background: url("/img/newletter-light.png") repeat;
+  background: url("../img/newletter-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q5 {
-  background: url("/img/particulate-pollution-light.png") repeat;
+  background: url("../img/particulate-pollution-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q6 {
-  background: url("/img/resource-conflict-light.png") repeat;
+  background: url("../img/resource-conflict-light.png") repeat;
   background-size: 110px;
 }
 
 .background-q7 {
-  background: url("/img/research-funding-light.png") repeat;
+  background: url("../img/research-funding-light.png") repeat;
   background-size: 110px;
 }
 
 .background-conc {
-  background: url("/img/air-purification-light.png") repeat;
+  background: url("../img/air-purification-light.png") repeat;
   background-size: 110px;
 }
 
 /* ----------------------------------------------------------------- */
 
 #credits {
-  display: none;
   text-align: center;
   background-color: rgba(207,184,124,.5);
   border-radius: 25px;
