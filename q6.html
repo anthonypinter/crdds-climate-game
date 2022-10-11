@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client/script.js"></script>
+    <title>Climate Justice</title>
+  </head>
+
+  <body class="background-q6">
+    <div class="main-container">
+      <div class="transparent">
+      <div class="flexbox-container flex-verical">
+        <h1>Open for Climate Justice: The Game</h1>
+      </div>
+      <div class="flexbox-container flex-verical">
+        <!--  -->
+        <h2>Question 6: Natural resource conflicts</h2> 
+      </div>
+      <div class="flexbox-container flex-verical">
+        <!--  -->
+        <h3 class="flexbox-item flexbox-item-1 question">
+          Your research focuses on natural resource conflicts in Brazil. Your studies could be widely applicable to other areas where socio-political structures are under stress due to climate change. Do you:
+
+        </h3>
+      </div>
+      <div class="question-container">
+        <div
+          class="question"
+          id="option1"
+          onclick="changeImage1()"
+        >
+          <img
+            class="flexbox-item flexbox-item-1 opt-img"
+            id="img-1"
+            src="/img/close.png"
+          />
+          <!--  -->
+          <div class="options">
+            <p>Publish your latest article in a prominent open access journal, which will bring the research international attention, and it will also be available to anyone who wants to access it</p>
+          </div>
+        </div>
+        <div
+          class="question"
+          id="option2"
+          onclick="changeImage2()"
+        >
+          <img
+            class="flexbox-item flexbox-item-1 opt-img"
+            id="img-2"
+            src="/img/close.png"
+          />
+          <!--  -->
+          <div class="options">
+            <p>Make your entire data set open so that other researchers can find, reuse, and build upon your data, potentially leading to broader and more impactful implementation of your findings</p>
+          </div>
+        </div>
+      </div>
+      <div class="spacing"> </div>
+      
+      <div class="foot">
+        <div class="flexbox-container percent-block" id="result" style="display:none;">
+          <h2 id="percent" class="flexbox-item"><span id="agree"></span>% of researchers made the same decision. <span id="disagree"></span>% did not.</h2>
+          <div class="next">
+            <button onclick="pushData()" type="button"><a href="/q7.html">Next question</a></button>
+          </div>
+        </div>
+        </div>
+          <!--
+          <footer>
+          <div class="icon">
+        <img class="icons"src="/img/univ-lib.png" />
+        <img class="icons"src="/img/scholarship.JPG" />
+        </div>
+      </footer>
+      -->
+    </div>
+    </div>
+  </body>
+</html>

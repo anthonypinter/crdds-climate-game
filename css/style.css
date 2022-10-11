@@ -1,0 +1,271 @@
+* {
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+button > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 5em 0em 5em;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0% 1%;
+  flex-basis: 40%;
+	flex-grow: 0;
+	flex-shrink: 0;
+  justify-content: space-around;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 1%;
+  flex-basis: 40%;
+	flex-grow: 0;
+	flex-shrink: 0;
+  justify-content:center;
+  cursor: pointer;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 1%;
+  flex-basis: 40%;
+	flex-grow: 0;
+	flex-shrink: 0;
+  justify-content: space-around;
+}
+
+.flexbox-item {
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 10px;
+}
+
+.descriptive-text {
+  text-align: center;
+  padding: 0 1em 0 1em;
+}
+
+.opt-img {
+  height: 150px;
+  width: 85px;
+}
+
+.percent-block {
+  margin-top: 30px;
+  border-radius: 25px;
+  background-color: rgba(207,184,124,.75);
+}
+
+.foot{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 1em;
+}
+
+.item {
+	flex-basis: 100px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.options{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#result {
+  display:none;
+}
+
+#percent {
+  overflow: auto;
+  height: fit-content;
+}
+
+/* ----------------------------------------------------------------- */
+/* button styling */
+/* ----------------------------------------------------------------- */
+
+button {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(207,184,124,.5);
+  padding: .25em;   
+  border: 2px solid #999;
+  border-color: #999;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px #999;
+}
+
+.play{
+  width: 120%;
+}
+
+.play:hover {
+  background-color: rgba(207,184,124,.3);
+}
+
+.next {
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 10px;
+  margin-bottom: 1em;
+}
+
+.next > button {
+  background-color: rgba(255,255,255,.5);
+}
+
+.next > button:hover {
+  background-color: rgba(255,255,255,.75);
+}
+
+/* ----------------------------------------------------------------- */
+/* conclusion styling */
+/* ----------------------------------------------------------------- */
+
+.conc{
+  font-size: 40px;
+}
+
+.conc-link {
+  
+  color: rgba(207,184,124,1)
+}
+
+.conc-link:hover {
+  color: rgba(207,184,124,.5)
+}
+
+/* ----------------------------------------------------------------- */
+/* footer styling, should be consistent across all pages */
+/* ----------------------------------------------------------------- */
+
+footer {
+  position: relative;
+  bottom: 100%;
+  padding: 3em 5em 3em 5em;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  height: 3em;
+  margin: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+/* this class just puts a very transparent gray box around the content,
+   for readability */
+/* ----------------------------------------------------------------- */
+
+.transparent {
+  background-color: rgba(128,128,128,0.1);
+  border-radius: 25px;
+}
+
+/* ----------------------------------------------------------------- */
+/* this is meant to be placed on a div between the text 
+   and button on the index and conclusion pages */
+/* ----------------------------------------------------------------- */
+
+.spacing {
+  height: 1em;
+}
+
+/* ----------------------------------------------------------------- */
+/* These set the background images for each page */
+/* ----------------------------------------------------------------- */
+
+.background {
+  background: url("/img/lock-light.png") repeat;
+  background-size: 110px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.background-q1 {
+  background: url("/img/water-pollutants-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q2 {
+  background: url("/img/air-purification-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q3 {
+  background: url("/img/wildfire-mitigation-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q4 {
+  background: url("/img/newletter-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q5 {
+  background: url("/img/particulate-pollution-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q6 {
+  background: url("/img/resource-conflict-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-q7 {
+  background: url("/img/research-funding-light.png") repeat;
+  background-size: 110px;
+}
+
+.background-conc {
+  background: url("/img/air-purification-light.png") repeat;
+  background-size: 110px;
+}
+
+/* ----------------------------------------------------------------- */
+
+#credits {
+  display: none;
+  text-align: center;
+  background-color: rgba(207,184,124,.5);
+  border-radius: 25px;
+  padding:.5em;
+  margin-top: 1em;
+}
+
