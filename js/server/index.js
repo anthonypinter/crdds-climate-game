@@ -20,9 +20,12 @@ app.use((req, res, next) => {
   next();
 });
 
-  
-let port = 8000;
-app.listen(port);
+let port;
+ if (port == null || port == "") {
+   port = 8000;
+ }
+ app.listen(port);
+ console.log(port);
 
 app.get('/', async (req, res) => {
   let data = JSON.parse(await fs.readFile(dataFile, 'utf-8'));
