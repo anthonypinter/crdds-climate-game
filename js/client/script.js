@@ -1,3 +1,4 @@
+console.log("testing")l
 var clicked = false;
 const open_url = "./img/open.png";
 const close_url = "./img/close.png";
@@ -20,8 +21,8 @@ async function _dataLoad() {
   .then(x => { return x } );
   console.log(x);
 };
-
 data = _dataLoad();
+
 
 /*
 function displayCredits() {
