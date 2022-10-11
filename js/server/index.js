@@ -8,7 +8,7 @@ const fs = require('fs').promises; //interacting with JSON file
 const path = require('path'); //handling path creation for said JSON
 const app = express();
 
-const dataFile = path.join(__dirname, 'data.json');
+const dataFile = '/data.json'
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
