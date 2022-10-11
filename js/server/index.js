@@ -20,12 +20,10 @@ app.use((req, res, next) => {
   next();
 });
 
-let port;
- if (port == null || port == "") {
-   port = 3000;
- }
- app.listen(port);
- console.log(port);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
 app.get('/', async (req, res) => {
   let data = JSON.parse(await fs.readFile(dataFile, 'utf-8'));
