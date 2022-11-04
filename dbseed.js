@@ -1,9 +1,10 @@
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
-    host: "crdds-data-instance-1.ca01ucxlqya6.us-west-2.rds.amazonaws.com",
-    user: "admin",
-    password: "nx4JPFSGD2hL3d2"
+    host: "open-climate-game-data.ca01ucxlqya6.us-west-2.rds.amazonaws.com",
+    user: "",
+    //password: "",
+    timeout: 60000
 });
 
 con.connect(function(err) {
@@ -17,25 +18,27 @@ con.connect(function(err) {
         console.log(result);
     });
 
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (32, 57)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (32, 56)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (33, 57)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (32, 52)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (11, 68)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (22, 53)', function(error, result, fields) {
         console.log(result);
     });
-    con.query('INSERT INTO questions (qyes, qno) VALUES (1, 1)', function(error, result, fields) {
+    con.query('INSERT INTO questions (qyes, qno) VALUES (28, 42)', function(error, result, fields) {
+       
+       
         console.log(result);
     });
     con.end();

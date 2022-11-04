@@ -9,9 +9,9 @@ app.use(bodyParser.json());
 
 const mysql_pool = mysql.createPool({
     connectionLimit: 100,
-    host: "crdds-data-instance-1.ca01ucxlqya6.us-west-2.rds.amazonaws.com",
-    user: "admin",
-    password: "nx4JPFSGD2hL3d2"
+    host: "open-climate-game-data.ca01ucxlqya6.us-west-2.rds.amazonaws.com",
+    user: "",
+    password: "",
 });
 
 //support posting form data with url encoded
@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
     res.send('Hello World!'); // This will serve your request to '/'.
   });
   
-  http.listen(3000, function () {
+  http.listen(443, function () {
     console.log('App listening on port 3000!');
    });
 
